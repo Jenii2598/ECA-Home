@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Henny+Penny&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<style>
+ 
+    body{
+        background-image: linear-gradient(-45deg, rgb(173, 23, 219), rgb(32, 252, 252));
+        margin: 50px;
+        font-family: "Henny Penny";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+    }
+
+
+    h1{
+      position: absolute;
+      top: 5px;
+      font-size: xx-large;
+      
+      font-weight: bolder;
+      
+    }
+
+
+@keyframes  {
+  0% { color: rgb(37, 6, 51); }
+  50% { color: rgb(43, 40, 240); }
+  100% { color: rgb(13, 20, 32); }
+}
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr 1fr;
+        gap: 50px;
+        
+        
+    }
+    .card{
+        height: 16rem;
+    }
+    .btn{
+        width: 100%;
+        color: black;
+        background: linear-gradient(45deg, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+        font-family: "Henny Penny";
+        font-size: medium;
+        font-weight: bold;
+        border: none;
+        
+        
+
+    }
+ 
+    @keyframes gradient {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+    @media (max-width:600px){
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+        h1{
+            text-align: center;
+        }
+     .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 15px;
+     }
+        
+    }
+</style>
+<body>
+    <h1>Welcome to the Home Page!</h1>
+<br>
+
+<div class="sites">
+    <div class="container">
+    <div class="card" style="width: 13rem;">
+        <img src="kids.jfif" class="card-img-top" alt="kids" height="66%">
+        <div class="card-body" id="a-z">
+            <a class="btn btn-primary" href="https://www.kidsa-z.com/main/Login" role="button">Go to Kids A-Z</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 13rem;" id="ar">
+        <img src="ar.jfif" class="card-img-top" alt="ar" height="66%">
+        <div class="card-body">
+            <a class="btn btn-primary" href="https://login.renaissance.com/109563d9-1bd0-4706-99d2-d79a387b1df4?state=13e98399-7a07-42c7-8fe8-8b4b45f865a9" role="button">Go to A.R.!</a>
+          
+        </div>
+      </div>
+
+      <div class="card" style="width: 13rem;" id="seesaw">
+        <img src="seesaw.png" class="card-img-top" alt="seesaw" height="66%">
+        <div class="card-body">
+            <a class="btn btn-primary" href="https://app.seesaw.me/#/login" role="button">Go to Seesaw!</a>
+        </div>
+      </div>
+      <div class="card" style="width: 13rem;" id="splash">
+        <img src="splash.jfif" class="card-img-top" alt="splash" height="66%">
+        <div class="card-body">
+            <a class="btn btn-primary" href="https://www.splashlearn.com/signin#/" role="button">Go to SplashLearn!</a>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
