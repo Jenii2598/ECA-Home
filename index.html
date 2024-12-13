@@ -20,6 +20,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        
 
     }
 
@@ -77,12 +78,13 @@
         }
     }
 
-    @media (max-width:600px){
+    @media (max-width:576px){
         body{
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 50vh;
+            background-size: 500% 500%;
+            height:20vh;
         }
         h1{
             text-align: center;
@@ -90,18 +92,26 @@
      .container{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        height: 15px;
-     }
+        gap: 5px;
+        height: 100px;
+        margin-top: 100px;
         
+        
+        
+     }
+     h1{
+        text-align: center;
+        position: none;
+     }
+    
     }
 </style>
 <body>
     <h1>Welcome to the Home Page!</h1>
 <br>
 
-<div class="sites">
-    <div class="container">
+<div class="container-med">
+    <div class="container" >
     <div class="card" style="width: 13rem;">
         <img src="kids.jfif" class="card-img-top" alt="kids" height="66%">
         <div class="card-body" id="a-z">
@@ -128,6 +138,11 @@
         <div class="card-body">
             <a class="btn btn-primary" href="https://www.splashlearn.com/signin#/" role="button">Go to SplashLearn!</a>
         </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
       </div>
     </div>
 </div>
